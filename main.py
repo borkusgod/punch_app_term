@@ -9,4 +9,4 @@ from text_file import *
 print(now_raw("year/date"))
 print('\n')
 
-# print(greeting)
+print(greeting)

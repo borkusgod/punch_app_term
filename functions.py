@@ -33,4 +33,6 @@ def now_raw(option):
     elif option == "year/date":
         now_dt_tm = now_full.strftime(year_time)
         return now_dt_tm
+    else:
+        return "Invalid argument passed"
 
