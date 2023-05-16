@@ -6,7 +6,10 @@
 from functions import *
 from text_file import *
 
-now_raw()
+print(now_raw()[1])
+x = now_raw()[0]
+x_formed = x.strftime("%Y, %B %d, -- %H:%M:%S")
+print(x_formed)
 print('\n')
 
 print(greeting)

@@ -13,7 +13,9 @@ def chk_fir():
     if os.path.exists(f'{sys_fld}'):
         print("ini file found")
     elif not os.path.exists(f'{sys_fld}'):
-        print("Program has not been run before")        mk_init()
+        print("Program has not been run before")
+        mk_init()
+
 
 def mk_init():
     with open('./app_sys/init_set.txt', 'w') as writer:
@@ -21,10 +23,9 @@ def mk_init():
         writer.write(f'File initially created at {gt_tmstmp}')
 
 
-
 # functions having to do with time and date
+# format so that you can pass args for results
 def now_raw():
     now_full = datetime.now()
-    now_form = now_full.strftime("%Y, %B %d, -- %H:%M:%S")
-    print(f'The current time is: {now_form}')
-    return now_form
+    now_dt_tm = now_full.strftime(year_time)
+    return now_full, now_dt_tm
