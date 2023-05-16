@@ -1,9 +1,10 @@
 # function file for punch app in termux dir
 
-# function to check if app has ever 
-# been run before 
-from datetime import datetime
 import os
+# function to check if app has ever
+# been run before
+from datetime import datetime
+
 from text_file import *
 
 
@@ -19,13 +20,17 @@ def chk_fir():
 
 def mk_init():
     with open('./app_sys/init_set.txt', 'w') as writer:
-        gt_tmstmp = now_raw()
+        gt_tmstmp = now_raw("year/date")
         writer.write(f'File initially created at {gt_tmstmp}')
 
 
 # functions having to do with time and date
-# format so that you can pass args for results
-def now_raw():
+def now_raw(option):
+    # format so that you can pass args for results
     now_full = datetime.now()
-    now_dt_tm = now_full.strftime(year_time)
-    return now_full, now_dt_tm
+    if option == "raw":
+        return now_full
+    elif option == "year/date":
+        now_dt_tm = now_full.strftime(year_time)
+        return now_dt_tm
+

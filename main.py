@@ -6,12 +6,7 @@
 from functions import *
 from text_file import *
 
-print(now_raw()[1])
-x = now_raw()[0]
-x_formed = x.strftime("%Y, %B %d, -- %H:%M:%S")
-print(x_formed)
+print(now_raw("year/date"))
 print('\n')
 
-print(greeting)
-
-
+# print(greeting)
