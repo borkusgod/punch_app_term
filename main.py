@@ -6,7 +6,11 @@
 from functions import *
 from text_file import *
 
-print(now_raw("year/date"))
+print(dt_tm("year/date"))
 print('\n')
-
 print(greeting)
+x = chk_fir()
+if x:
+    print('folder exists')
+elif x is False:
+    print('folder does not exist')
