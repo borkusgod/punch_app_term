@@ -11,5 +11,9 @@ fresh_greeting = "Hello and welcome! This app will help you\nkeep track of " \
            "hours\nthat you have spent performing certain tasks.\nAll of " \
            "these and many more. So let's get your started."
 
+usr_crt = "Let\'s get started by creating your user profile" \
+          "Let\'s make a username that is safe and secure, but also easy for you to remember "
+
+
 # pre-configured date/time formats
 year_time = "%Y, %B %d, -- %H:%M:%S"

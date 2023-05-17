@@ -7,7 +7,7 @@ from text_file import *
 # functions for system admin
 def chk_fir():
     if os.path.exists(f'{system_drive}'):
-        return True
+        print("It appears you have run this program before")
     elif not os.path.exists(f'{system_drive}'):
         print(fresh_greeting)
         mk_init()
@@ -32,3 +32,6 @@ def dt_tm(option):
     else:
         return "Invalid argument passed"
 
+
+def append_usr_info():
+    pass
