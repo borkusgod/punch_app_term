@@ -9,6 +9,7 @@ def chk_fir():
     if os.path.exists(f'{system_drive}'):
         return True
     elif not os.path.exists(f'{system_drive}'):
+        print(fresh_greeting)
         mk_init()
 
 

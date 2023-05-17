@@ -8,5 +8,6 @@ from text_file import *
 
 print(dt_tm("year/date"))
 print('\n')
-print(greeting)
-chk_fir()
+if chk_fir():
+    print("It looks like you have run the app before.")
+
