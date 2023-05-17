@@ -33,5 +33,5 @@ def dt_tm(option):
         return "Invalid argument passed"
 
 
-def append_usr_info():
-    pass
+def create_usr_prof():
+    print(usr_crt)

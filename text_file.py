@@ -4,15 +4,14 @@
 home_path = "data/data/com.termux/files/home/term_pys/punch_app/"
 system_drive = "./app_sys"
 
-fresh_greeting = "Hello and welcome! This app will help you\nkeep track of " \
-                 "the time " \
-           "you invest into a project\nSome examples would be punching in and " \
-           "out from a job,\nkeeping track of your breaks and counting " \
-           "hours\nthat you have spent performing certain tasks.\nAll of " \
-           "these and many more. So let's get your started."
+fresh_greeting = "Hello and welcome!\n" \
+                 "This app was designed to help you\n" \
+                 "keep track of the time for project or even a job\n"
 
-usr_crt = "Let\'s get started by creating your user profile" \
-          "Let\'s make a username that is safe and secure, but also easy for you to remember "
+usr_crt = "Let\'s get started by creating your user profile\n" \
+          "Let\'s make a username that is safe and secure, but also easy for you to remember.\n" \
+          "It can be your email address that you want to associate with the account.\n" \
+          "It can also be the initial of your first name and your whole last name, etc\n"
 
 
 # pre-configured date/time formats

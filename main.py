@@ -9,4 +9,5 @@ from text_file import *
 print(dt_tm("year/date"))
 print('\n')
 chk_fir()
+create_usr_prof()
 
