@@ -9,8 +9,4 @@ from text_file import *
 print(dt_tm("year/date"))
 print('\n')
 print(greeting)
-x = chk_fir()
-if x:
-    print('folder exists')
-elif x is False:
-    print('folder does not exist')
+chk_fir()
