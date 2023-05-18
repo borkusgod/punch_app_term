@@ -34,4 +34,9 @@ def dt_tm(option):
 
 
 def create_usr_prof():
-    print(usr_crt)
+    # make funcs for each element of prof
+    # name, first and last
+    # email
+    # phone number
+    # desired username, check against rules, previous, etc
+    # 
