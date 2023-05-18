@@ -34,9 +34,25 @@ def dt_tm(option):
 
 
 def create_usr_prof():
+    # testing container
+    tmp_cont = []
     # make funcs for each element of prof
-    # name, first and last
+    # name first and last
+    gt_fname = input(fn_txt)
+    tmp_cont.append(gt_fname)
+    gt_lname = input(ln_txt)
+    tmp_cont.append(gt_lname)
+    
     # email
+    gt_email = input(ea_txt)
+    tmp_cont.append(gt_email)
+    
     # phone number
+    gt_phone = input(pn_txt)
+    tmp_cont.append(gt_phone)
+    
     # desired username, check against rules, previous, etc
-    # 
+    gt_uname = input(un_txt)
+    tmp_cont.append(gt_uname)
+    for each in tmp_cont:
+        print(each)

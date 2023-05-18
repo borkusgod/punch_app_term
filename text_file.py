@@ -11,10 +11,21 @@ fresh_greeting = "Hello and welcome!\n" \
                  "keep track of the time for project or even a job\n"
 
 # profile creation strings
-prof_txt = "Let\'s get started by creating your user profile\n"
-           "Let me start by getting some information from you first."
+prof_txt = "Let\'s get started by creating your user profile\nLet me start by getting some information from you first."
 
-prof_inp = "Please type the username you would like to use: "
+fn_txt = "Please type your first name: "
+
+ln_txt = "Please type your last name: "
+
+ea_txt = "Please type in the email address you would like associated with this account: "
+
+pn_txt = "Please type in your cell phone number that will be linked to this profile: "
+
+un_txt = "Please enter the username you would like to use for this profile: "
+
+une_txt = "The username you tried does not work for the following reason(s): "
+
+une_list_txt = ["error 1", "error 2", "error 3"]
 
 # pre-configured date/time formats
 year_time = "%Y, %B %d, -- %H:%M:%S"
