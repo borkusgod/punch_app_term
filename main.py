@@ -10,4 +10,3 @@ print(dt_tm("year/date"))
 print('\n')
 chk_fir()
 create_usr_prof()
-
