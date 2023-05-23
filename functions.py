@@ -36,24 +36,35 @@ def dt_tm(option):
 
 def create_usr_prof():
     # testing container
-    tmp_cont = []
+    #tmp_cont = []
     # make funcs for each element of prof
     # name first and last
     gt_fname = input(fn_txt)
-    tmp_cont.append(gt_fname)
+    temp_usr_list.append(gt_fname)
     gt_lname = input(ln_txt)
-    tmp_cont.append(gt_lname)
+    temp_usr_list.append(gt_lname)
     
     # email
     gt_email = input(ea_txt)
-    tmp_cont.append(gt_email)
+    temp_usr_list.append(gt_email)
     
     # phone number
     gt_phone = input(pn_txt)
-    tmp_cont.append(gt_phone)
+    temp_usr_list.append(gt_phone)
     
     # desired username, check against rules, previous, etc
     gt_uname = input(un_txt)
-    tmp_cont.append(gt_uname)
-    for each in tmp_cont:
+    temp_usr_list.append(gt_uname)
+    for each in temp_usr_list:
         print(each)
+
+    with open("usr_prof.py", "w") as up_crt:
+        get_crd = temp_usr_list
+        up_crt.write(get_crd)
+
+
+def load_usr_prof():
+    from app_usr.usr_prof import *
+    print(temp_usr_list)
+
+    

@@ -5,6 +5,7 @@
 
 from functions import *
 from text_file import *
+from pprint import pprint
 
 print(dt_tm("year/date"))
 print('\n')
