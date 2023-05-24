@@ -2,16 +2,17 @@
 import os
 from datetime import datetime
 from text_file import *
-from app_sys.usr_vars import *
 
 
 # functions for system admin
 def chk_fir():
-    if os.path.exists(f'{system_drive}'):
+    if os.path.isdir(f'{system_drive}'):
         print("It appears you have run this program before")
-    elif not os.path.exists(f'{system_drive}'):
+    elif not os.path.isdir(f'{system_drive}'):
         print(fresh_greeting)
-        mk_init()
+        create_usr_prof()
+        # load_usr_prof()
+        # mk_init()
 
 
 def mk_init():
@@ -35,36 +36,37 @@ def dt_tm(option):
 
 
 def create_usr_prof():
-    # testing container
-    #tmp_cont = []
-    # make funcs for each element of prof
+    user_info_cont = []
     # name first and last
     gt_fname = input(fn_txt)
-    temp_usr_list.append(gt_fname)
+    user_info_cont.append(gt_fname)
     gt_lname = input(ln_txt)
-    temp_usr_list.append(gt_lname)
+    user_info_cont.append(gt_lname)
     
     # email
     gt_email = input(ea_txt)
-    temp_usr_list.append(gt_email)
+    user_info_cont.append(gt_email)
     
     # phone number
     gt_phone = input(pn_txt)
-    temp_usr_list.append(gt_phone)
+    user_info_cont.append(gt_phone)
     
     # desired username, check against rules, previous, etc
     gt_uname = input(un_txt)
-    temp_usr_list.append(gt_uname)
-    for each in temp_usr_list:
+    user_info_cont.append(gt_uname)
+    for each in user_info_cont:
         print(each)
 
-    with open("usr_prof.py", "w") as up_crt:
-        get_crd = temp_usr_list
-        up_crt.write(get_crd)
+    os.mkdir('app_sys')
+
+    with open("./app_sys/usr_prof.py", "w") as user_prof_create:
+        get_list = str(user_info_cont)
+        make_var = f'prof = {get_list}'
+        user_prof_create.write(make_var + '\n')
 
 
-def load_usr_prof():
-    from app_usr.usr_prof import *
-    print(temp_usr_list)
+# def load_usr_prof():
+#     print(prof)
+#     print(type(prof))
 
     

@@ -4,10 +4,8 @@
 # and we'll output to several formats
 
 from functions import *
-from text_file import *
-from pprint import pprint
 
 print(dt_tm("year/date"))
 print('\n')
 chk_fir()
-create_usr_prof()
+
