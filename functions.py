@@ -4,11 +4,13 @@ from datetime import datetime
 from text_file import *
 
 
+
 # functions for system admin
 def chk_fir():
-    if os.path.isdir(f'{system_drive}'):
+    if os.path.exists(f'{system_drive}'):
         print("It appears you have run this program before")
-    elif not os.path.isdir(f'{system_drive}'):
+        print("Would you like to log in?")
+    elif not os.path.exists(f'{system_drive}'):
         print(fresh_greeting)
         create_usr_prof()
         # load_usr_prof()
