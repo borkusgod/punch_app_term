@@ -7,7 +7,7 @@ from text_file import *
 
 # functions for system admin
 def chk_fir():
-    if os.path.exists(f'{system_drive}'):
+    if os.path.exists(f'{usr_prof_file}'):
         print("It appears you have run this program before")
         print("Would you like to log in?")
     elif not os.path.exists(f'{system_drive}'):

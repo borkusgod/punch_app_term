@@ -1,7 +1,11 @@
-import os
+def imp_cond():
+    from app_sys1 import usr_prof
+    print(prof)
 
-os.mkdir('pack_from_code')
 
-with open('./pack_from_code/__init__.py', 'w') as tester:
-    tester.write('')
+get_u = input("Make selection: ")
 
+if get_u == "Y":
+    imp_cond()
+else:
+    print("import failed")

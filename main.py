@@ -1,11 +1,14 @@
-# main file for punch app in term dir
-# this app will function as an app to keep 
-# track of your time punched for work 
-# and we'll output to several formats
+# ./term_pys/punch_app_term/main.py
+
 from functions import *
-from pack_crt import *
+import os
 
 print(dt_tm("year/date"))
 print('\n')
 chk_fir()
-print(vars_tester)
+#path = './app_sys'
+#file = './app_sys/usr_prof.py'
+#if os.path.exists(path):
+    #print("directory found")
+    #if os.path.isfile(file):
+        #print('File is present')

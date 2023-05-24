@@ -2,8 +2,9 @@
 # testing from inside of micro
 
 # system txt vars for program
-home_path = "data/data/com.termux/files/home/term_pys/punch_app/"
+home_path = "data/data/com.termux/files/home/term_pys/punch_app_term/"
 system_drive = "./app_sys"
+usr_prof_file = "./app_sys/usr_prof.py"
 
 # greeting strings
 fresh_greeting = "Hello and welcome!\n" \
