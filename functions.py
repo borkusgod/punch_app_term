@@ -40,11 +40,12 @@ def login():
     get_username = input("Please type your username: ")
     if get_username == prof[4]:
         get_password = input('Now please enter your password: ')
-        print("finish password part of profile creation part")
+        if get_password == prof[5]:
+            print("You are logged in! Now to main screen")
+            main_screen()
 
 
 # functions having to do with time and date
-
 
 
 def create_usr_prof():
@@ -77,3 +78,18 @@ def create_usr_prof():
         get_list = str(user_info_cont)
         make_var = f'prof = {get_list}'
         user_prof_create.write(make_var + '\n')
+
+
+def main_screen():
+    # start blocking out components for main screen and break into pieces
+    os.system('cls')
+    print('Welcome to the main screen!!!')
+    # main screen
+    # time punch screen
+    # time edit screen
+    # time review screen
+    # exit screen
+    pass
+
+
+
