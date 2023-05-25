@@ -1,5 +1,4 @@
-# function file for punch app in termux dir
-import os
+import os# ./term_pys/punch_app_term/functions.py
 from datetime import datetime
 from text_file import *
 
@@ -7,14 +6,28 @@ from text_file import *
 
 # functions for system admin
 def chk_fir():
-    if os.path.exists(f'{usr_prof_file}'):
+    import app_sys
+    if os.path.exists('./app_sys/usr_prof.py'):
         print("It appears you have run this program before")
-        print("Would you like to log in?")
-    elif not os.path.exists(f'{system_drive}'):
+        ask_if = input("Would you like to log in? ")
+        if ask_if == "y" or ask_if == "Y" or ask_if == "1":
+            print('Initiate login func')
+            login()
+        else:
+            print('return to main system menu')
+    elif not os.path.exists('./app_sys/usr_prof.py'):
         print(fresh_greeting)
         create_usr_prof()
         # load_usr_prof()
         # mk_init()
+
+
+def login():
+    from app_sys.usr_prof import prof
+    get_username = input("Please type your username: ") 
+    if get_username == prof[4]:
+        get_password = input('Now please enter your password: ')
+        print("finish password part of profile creation part")
 
 
 def mk_init():
@@ -56,10 +69,12 @@ def create_usr_prof():
     # desired username, check against rules, previous, etc
     gt_uname = input(un_txt)
     user_info_cont.append(gt_uname)
-    for each in user_info_cont:
-        print(each)
 
-    os.mkdir('app_sys')
+    gt_password = input(ps_txt)
+    user_info_cont.append(gt_password)
+
+    for each in user_info_cont:
+            print(each)
 
     with open("./app_sys/usr_prof.py", "w") as user_prof_create:
         get_list = str(user_info_cont)

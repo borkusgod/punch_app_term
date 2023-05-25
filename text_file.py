@@ -4,6 +4,7 @@
 # system txt vars for program
 home_path = "data/data/com.termux/files/home/term_pys/punch_app_term/"
 system_drive = "./app_sys"
+system_label = 'app_sys'
 usr_prof_file = "./app_sys/usr_prof.py"
 
 # greeting strings
@@ -23,6 +24,8 @@ ea_txt = "Please type in the email address you would like associated with this a
 pn_txt = "Please type in your cell phone number that will be linked to this profile: "
 
 un_txt = "Please enter the username you would like to use for this profile: "
+
+ps_txt = "Please enter the password you would like to use for the account: "
 
 une_txt = "The username you tried does not work for the following reason(s): "
 
