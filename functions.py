@@ -21,10 +21,9 @@ def dt_tm(option):
 def chk_fir():
     import app_sys
     if os.path.exists('./app_sys/usr_prof.py'):
-        print("It appears you have run this program before")
-        ask_if = input("Would you like to log in? ")
+        print("It appears you have run this program before\n")
+        ask_if = input("Would you like to log in?\n")
         if ask_if == "y" or ask_if == "Y" or ask_if == "1":
-            print('Initiate login func')
             login()
         else:
             print('return to main system menu')
@@ -77,13 +76,15 @@ def create_usr_prof():
     with open("./app_sys/usr_prof.py", "w") as user_prof_create:
         get_list = str(user_info_cont)
         make_var = f'prof = {get_list}'
-        user_prof_create.write(make_var + '\n')
+        user_prof_create.write(make_var + '\n\n')
 
 
 def main_screen():
     # start blocking out components for main screen and break into pieces
-    os.system('cls')
-    print('Welcome to the main screen!!!')
+    # below is windos
+    #os.system('cls')
+    os.system('clear')
+    print(wel_mn)
     # main screen
     # time punch screen
     # time edit screen

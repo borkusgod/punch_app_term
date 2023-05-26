@@ -4,7 +4,6 @@
 # system txt vars for program
 home_path = "data/data/com.termux/files/home/term_pys/punch_app_term/"
 system_drive = "./app_sys"
-system_label = 'app_sys'
 usr_prof_file = "./app_sys/usr_prof.py"
 
 # greeting strings
@@ -33,3 +32,6 @@ une_list_txt = ["error 1", "error 2", "error 3"]
 
 # pre-configured date/time formats
 year_time = "%Y, %B %d, -- %H:%M:%S"
+
+# main screen text vars
+wel_mn = "Welcome to the main screen\n\nHere are the options that you can choose from.\n\n1. Add Time Punch\n2. Edit Time Punch\n3. Delete Time Punch\n4. Exit Program"
