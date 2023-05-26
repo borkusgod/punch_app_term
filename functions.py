@@ -85,6 +85,22 @@ def main_screen():
     #os.system('cls')
     os.system('clear')
     print(wel_mn)
+    main_st = True
+    while main_st is True:
+        gt_choice = input('Please enter the number that corresponds to the choices above: \n')
+        if gt_choice == "1":
+            print('You selected option 1')
+            #main_st = False
+        elif gt_choice == "2":
+            print('You selected option 2')
+            #main_st = False
+        elif gt_choice == "3":
+            print('You selected option 3')
+            #main_st = False
+        elif gt_choice == "4":
+            print('You selected option 4')
+            #main_st = False
+        
     # main screen
     # time punch screen
     # time edit screen
