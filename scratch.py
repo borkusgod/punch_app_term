@@ -1,23 +1,17 @@
-#def imp_cond():
-    #from app_sys1 import usr_prof
-    #print(prof)
+from datetime import datetime
 
 
-#get_u = input("Make selection: ")
+def make_dps(how_many):
+    test_cont = []
+    date_cont = []
+    day = how_many
+    for each_day in range(5):
+        made_time = datetime(2023, 5, day, 10, 30, 00)
+        test_cont.append(made_time)
+        day += 1
+    for each in test_cont:
+        print(each)
+    print(type(test_cont[0]))
 
-#if get_u == "Y":
-    #imp_cond()
-#else:
-    #print("import failed")
-import os
-
-
-def file_checker():
-    import test_folder
-    if os.path.exists('./test_folder/file2.txt'):
-        print('file exists')
-    else:
-        print('file does not exist')
-
-
-file_checker()
+day_start = int(input("what day to start: \n"))        
+make_dps(day_start)

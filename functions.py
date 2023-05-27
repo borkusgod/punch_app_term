@@ -89,24 +89,46 @@ def main_screen():
     while main_st is True:
         gt_choice = input('Please enter the number that corresponds to the choices above: \n')
         if gt_choice == "1":
-            print('You selected option 1')
+            #print('You selected option 1')
+            add_tp()
             #main_st = False
         elif gt_choice == "2":
             print('You selected option 2')
+            edit_tp()
             #main_st = False
         elif gt_choice == "3":
             print('You selected option 3')
+            delete_tp()
             #main_st = False
         elif gt_choice == "4":
             print('You selected option 4')
+            exit_app()
             #main_st = False
-        
-    # main screen
+    
     # time punch screen
     # time edit screen
     # time review screen
     # exit screen
-    pass
 
 
+def time_puncher():
+    get_now = datetime.now()
+    made_time = datetime(2023, 5, 26, 20, 52, 00)
+    print(get_now)
+    print(made_time)
 
+def add_tp():
+    print("Print from add_tp() function")
+    time_puncher()
+
+
+def edit_tp():
+    print("Print from edit_tp() function")
+
+
+def delete_tp():
+    print("Print from delete_tp() function")
+
+
+def exit_app():
+    print("Print from exit_app() function")    
