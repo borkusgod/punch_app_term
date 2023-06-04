@@ -114,6 +114,7 @@ def main_screen():
 def time_puncher():
     get_now = datetime.now()
     made_time = datetime(2023, 5, 26, 20, 52, 00)
+    
     print(get_now)
     print(made_time)
 
