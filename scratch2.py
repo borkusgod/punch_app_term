@@ -4,8 +4,3 @@ def py_writer():
         py_r.write(txt_output)
 
 
-#py_writer()
-
-from tester import *
-print(var_test)
-git
